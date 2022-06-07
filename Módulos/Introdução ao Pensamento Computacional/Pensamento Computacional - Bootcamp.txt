@@ -1,0 +1,297 @@
+Bootcamp
+
+- Pensamento computacional
+	O que é? Processo de pensamento envolvido na expressão de soluções em passos computacionais ou algoritmos que podem ser implamentados no computador. (Aho, 2011; Lee, 2016)
+	Não se restringe ao meio computacional.
+	Sistemático e eficiente, na formaluação e resolução de problemas
+	Habilidade generalista
+	
+	- Baseado em 4 pilares: Decomposição, Reconhecimento de padrões, Abstração, Design de algoritmos.
+	Decomposição: Pegar um problema com complexidade, e dividi-lo para encontar problemas menores e resolvivéis.
+Exemplo: Receita de bolo, pois possui etapas de preparo.
+
+	Reconhecimento de padrões: Identificar padrões ou similaridades ou diferenças de determinados contextos, entre os problemas. Padrão comportamental.
+
+	Abstração: Extrapolar o conceito do problema para uma forma generalista. Tirar um conceito, resolução de problema particular, para mais contextos.
+
+	Design de algoritmos: Automatizar, Definir passo a passo a solução do problema.
+
+Processo Contínuo
+	Definir uma solução
+	Testar a solução
+	Aperfeiçoamento da solução encontrada
+	Ciclo entre: Refinamento, Teste, Análise.
+
+- Habilidades Complementares
+	Raciocínio Lógico, Aperfeiçoamento
+
+	Racioncínio Lógico: é uma forma de pensamento estruturado, ou  racioncínio que permite encontar a conclusão ou determinar a resolução de um problema.
+	É uma habilidade de terinamento.
+
+	- Classificação: Indução, Dedução, Abdução
+	Indução: A partir de um Fenômeno observado, determinando Leis e Teorias a partir disso.
+	Dedução: Previsões e explicações para aquele fenômeno.
+	Abdução: A partir de uma conclusão, e observação, você tira uma premissa.
+Exemplo: A gramas está molhada, logo deve ter chovido.
+
+Disso tudo, haverá diagnósticos e processo insvestigativo.
+
+	Inferência
+		Sintética
+			Abdução
+			Indução
+		Análitíca
+			Dedução
+
+	- Aperfeiçoamento: Ato de aperfeiçoar. Melhoramento. Aprimoramento. Refinamento.
+		A partir de uma solução, determinar pontos de melhora e refinamento.
+
+		Encontrar solução eficiente
+Melhor uso de recursos
+		Otimizar processos
+
+		Simplificar linha de códigos
+Melhorar códigos e algoritmos
+		Funções bem definidas
+
+Pilares:
+	- Decomposição
+	Decompor, segmentar. Tendo um problema, dividir em problemas menores. Tornando mais fáceis, e gerenciáveis.
+
+	Estratégias
+		Análise: Processo de quebrar e determinar partes menores e gerenciáveis
+		Síntese: Combinar os elementos recompondo o problema orginal. Reconstruir o problema original a partir das partes divididas
+
+	Ordem de execução de tarefas menores: Sequêncial ou Paralelo
+		Sequêncial: Dependência entre tarefas. Executando em "fila"
+		Paralelo: Tarefas podem ser executadas concomitantemente. Mais eficiência em menos tempo.
+
+	Treinar a decomposição, by yourself.
+
+	Como decompor? Identificar ou coletar dados > Agregar os dados > Funcionalidade
+
+Exemplo do cotidiano: cozinhar
+	Identificar os igredientes
+	Determinar as etapas (sequêncial ou paralelo)
+	Executar cada etapa
+	Agregar os igredientes para finalizar (Recompor com coerência)
+
+	- Padrões
+		Reconhecimento de padrões
+	Modelo base
+	Estrutura invariante
+	Repetição
+
+	A partir de similaridades e diferenças, é possível observar se há padrões
+
+	Exemplos: armazenamento de fotos de redes sociais; compressão de dados
+
+	Por que determinar padrões? Generalizar, com objetivo de obter resolução para problemas diferentes. A partir de Classes e Categorias
+
+Como o computador reconhece padrões? Por comparação
+
+	- Abstração
+		Abstrair: Observar, um ou mais elemantos, avaliando características e propriedades em separado
+		Abstração: Processo intelectual de isolamento de um objeto da realidades
+		Generalizar: Tronar-se geral, mais amplo, extensão
+
+		Generalização, na lógica, é a operação intelectual que consiste em renuir numa classe geral, um conjunto de seres ou fenômenos similares.
+
+	A parir de uma serie de características de dados, deve-se procurar detalhes nesses dados, que te interessem para serem trabalhados.
+
+	- Algoritmos
+		Instruções detalhadas, o passo a passo.
+		Assim, o computador precisa de instruções para que consiga executar a função que está sendo passada.
+
+	Sequência de passos com objetivo definido
+	Execução de tarefas específicas
+	Conjunto de operações que resultam em uma sucessão finita de ações
+
+	Como construir um algoritmo?
+		Compreensão do problema
+		Definição dados de entrada
+		Definir processamento
+		Definir dados de saida
+		Utilizar um método de construção
+		Teste e diagnóstico
+
+	- O que é a Lógica, no mundo da programação?
+		A lógica vem para solucionar uma problema, a partir de várias soluções.
+		"Parte da filosofia que trata das formas do pensamento em geral (dedução, indução, hipótese, inferência etc.) e das operações intelectuais que visam à determinação do que é verdadeiro ou não."
+		Forma de raciocínio. Com o fim de resolver um problema.
+		"Organização e planejamento das instruções, assertivas em um algoritmo, a fim de viabilizar a implantação de um programa."
+
+	- Técnicas de Lógica de Programação
+		Técnica Linear
+			Modelo tradicional
+			Não tem vínculo
+			Estrutura hierárquica
+			Programação de computadores
+
+			Execução sequenciada
+			Recursos limitados
+			Única dimensão
+
+			Ordenação de elementos por uma única propriedade.
+
+	- Técnica Estruturada
+		Objetivo: Escrita, Entendimento, Validação, Manutenção.
+
+	- Técnica Modular
+		Partes independentes, com seus módulos
+		Controlada por conjuto de regras
+		Em que tem metas, que são Simplificação, Decompor o problema, Verificação do módulo
+
+	- Tipologia e Variáveis
+		Qual a função do computador? Guardar informações a partir de dados e instruções.
+	Tipos de dados: Númericos, sendo Inteiros ou Reais.
+	Caracteres: Letras, caracteres e etc
+	Lógico: Verdadeiro ou falso
+
+	O que é uma variável? É uma tipo de estrutura mútavel, que pode receber mais de um valor, e mudar seu valor. Possui variações, recebendo um tipo de dado, mas não sabendo que valor receberá.
+
+	Papéis de uma variável
+		Ação: Modificação de estado
+		Controle: Vigiada, Controle
+
+	O que é uma Constante? Tudo aquilo que é fixo ou estável.
+
+	Os dados são Tratados e Processados
+	As Instruções são Operações que vão processar esses dados
+
+	- Instruções Primitivas
+
+		Instruções são linguagem de palavras-chave (vocabulário) de uma determinada programação que tem por finalidade comandar um computador que irá tratar os dados
+
+		Vão determinar as ações que iremos executar em cima dos dados
+
+	Cálculo matemáticos
+		Variáveis
+		Constantes
+			Operadores
+
+	Outros conceitos
+		Entrada, processamento, saída
+
+	- Estrututras Condicionais e Operadores
+		Condição? Estado de uma pessoa ou coisa. Que expressa uma condição ou suposição. Contém ou implica uma suposição ou hipótese
+		Dado uma condição, é feita uma operação
+
+	Estrutura Condicional: Simples, Composta, Encadeada
+
+	Operadores Relacionais: =, <>, >, < ,>=, <=.
+	Operadores que são usados em condicionais para verificar se aquela condicional é verdadeira ou falsa
+
+	- Estruturas de Repetição
+		Trecho de um programa que precisa ser executado mais de uma vez. Ou seja, um laço, loop, controle de fluxo, malhas de repetição.
+		Tendo condições de parada, para nao ter loop infinito.
+		Isso reduz a quantidade de linhas, compreensão facilitada, e redução de erro.
+	Exemplos:
+		Enquanto ... faça
+		Repita ... até
+		Para ... de ... até ... faça
+	Possível de mesclar uma condição dentro de uma estrutura de repetição.
+
+	- Vetores e Matrizes
+		Vetor: Sequência de tipos de dados.
+		"É caracterizado por uma variável dimensionada com tamanho pré-fixado."
+
+		Matriz: "Matriz é uma tabela organizada em linhas e colunas no formato m x n, onde m representa o número de linhas (horizontal) e n o número de colunas (vertical)"
+
+		Coleção de variáveis
+		Os índices são o meio como indentificar cada elemento da matriz
+
+	- O que são Funções
+		São blocos de instruções que realizam tarefas específicas
+
+		Podem ser chamadas dentro de seu algoritmo
+
+		Modularização do programa, deixando o código mais claro e conciso, reutilização de instruções
+
+	Função possui: Definição, nome, invocação, variável local
+
+	- Instruções de entrada/saída
+		Entrada: Consiste na inserção e recebimento de dados do mundo real por meio de ação de alguma interfece, seja teclado, mouse, arquivos, entre outros.
+
+		Inserção de dados
+
+		Saída: Consiste na impressão dos dados do mundo abstrato, digital por meio de ação de alguma interface.
+
+	- Introdução à linguagens de programação
+
+	Problemas comptacionais: de Decisão, Busca, Otimização
+		Problemas de decisão
+			Caracter lógico - Sim ou Não
+			Ideia
+			Pertencimento
+
+		Problemas de busca
+			Relacionamento binário
+			Objetivo: Buscar algo
+			x está em A?
+
+		Problemas de otimização
+			Objetivo: Maximizar, ou Minimizar uma função
+
+	O que é uma linguagem de programação?
+		Método padronizado composto por um conjunto de regras sintáticas e semânticas de implementação de um código fonte.
+	Código fonte: Tradução e Interpretação
+
+	- Como um computador entende o programa?
+
+	A partir de um programa de alto nível, será enviado para um compilador, que executa e analise o programa, e o compilador envia para uma linguagem de máquina.
+
+	Por dois meios: Tradução e Interpretação
+	Tradução: Geração do programa objeto, execução do programa objeto.
+		O torna mais rápido e programas menores
+
+	Interpretação: Programa fonte executado diretamente
+		Com mais flexibilidade, porém, mais lento
+
+	- Características de um programa
+		Legibilidade, Redigibilidade, Confiabilidade, Custo
+
+	Legibilidade: Facilidade na leitura, compreensão, ortogonalidade (Coerência nas instruções), definição adequada das estruturas
+
+	Regibilidade: Pode confiar com a legibilidade, Ortogonalidade (Coerência nas instruções), simplicidade da escrita, suporte à abstração, reuso do código, expressividade
+
+	Confiabilidade: Verificação de tipos, trata exceções, uso de ponteiros, compatibilidade entre compiladores
+
+	Custo: Treinamento, codificação, compilação, execução, infra-estrutura
+
+	Outras características: Atualizações, uso para IA, disponibilidade de ferramentas, comunidade ativa, adoção pelo mercado
+
+	- Análise de código
+		Análise léxica: particionar, classificar, eliminar
+
+		Análise sintática: a forma que define através de palavras reservadas e outros, qual é a estrutura daquela linguagem
+
+		Análise semântica: é o estudo do significado. O significado de cada elemento daquele código.
+
+	- Paradigmas de programação
+		O que é um paradigma: "Forma de resolução de problemas com diretrizes e limitações específicas de cada paradigma utilizando linguagem de programação"
+
+	Classificação: Orientação à objeto, Procedural, Funcional, Estruturado, Computação distribuída, Lógico
+
+	Paradigma Estruturado
+		Conceitos: sequência, decisão, iteração
+		Utilização: Problemas simples e diretos, aprender programação
+
+	Paradigma Orientação à Objeto
+		Paradigma na programação baseado na utilização de objetos e suas interações, análogo ao mundo real
+
+		"Um objeto é descrito por características específicas, comportamentos e estado"
+
+		O que eu tenho (Atributos)
+		Sou capaz de fazer (Métodos)
+		Como faço (Estados)
+
+	Pilares de Orientação à Objeto
+		Herança
+		Encapsulamento
+		Polimorfismo
+		Abstração
+
+	POO - Reuso de código
+	PE - Problemas específicos e diretos
+

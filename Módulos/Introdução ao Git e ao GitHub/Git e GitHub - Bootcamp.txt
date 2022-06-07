@@ -1,0 +1,80 @@
+	Git e GitHub
+
+	- Git - Sistema de versionamento de códigos distribuidos
+
+	Ajuda a criar e monitorar diferentes tipos de um mesmo arquivos
+
+	Benefícios de usar Git e GitHub:
+		Controle de versão
+		Armazenamento em nuvem
+		Trabalho em equipe
+		Melhorar seu código
+		Reconhecimento
+
+	- Comandos básicos para um bom desempenho no terminal
+
+	GUI (Graphical User Interface - Interface Gráfica do Usuário) x CLI (Command Line Interface - Interface de Linha de Comando)
+
+	DIR: Comando para listar os arquivos no local onde estamos
+
+	CD (Chande Directory): Vai mudar de diretório (pasta)
+		Se colocar CD + o nome da pasta que quer entrar, irá entar nessa pasta
+
+		CD .. Volta para a pasta anterior
+
+	CLS server para limpar o terminal
+
+	TAB (no teclado), completa as próximas palavras
+
+	MKDIR e o nome de uma nova pasta, criará uma pasta com o mesmo nome
+
+	ECHO + > e o nome do possível arquivo, mais o tipo de arquivo, criará esse arquivo
+
+	DEL + o nome de uma pasta, apagará os arquivos dentro da pasta em questão
+
+	RMDIR + nome da pasta + /S /Q irá apagar a pasta em questão
+
+	- Tópicos fundamentais para entender o funcionamento do Git
+
+	SHA1 - Secure Hash Algorithm (Algoritmo de Hash Seguro)
+		É um algoritmo de encriptogração
+		Gerar conjunto de caracteres identificador de 40 dígitos.
+
+		Ao salvar um arquivo, e ir no GIT Bash, no diretório atual, e colocar: openssl sha1 + nome e tipo do arquivo, será gerado um conjunto de 40 caracteres de encriptação.
+
+		Se mundar esse arquivo, e usar o mesmo comando, gerará outro conjunto de caracteres.
+
+		E se por a caso, voltar com as primeiras formas do arquivo original, sem as modificações que estvam, ou tirar as modificações que fez anteriormente, o GIT Bash irá voltar/criar o mesmo primeiro conjundo de caracteres.
+
+	- Objetos interos do Git
+
+		BLOBS
+		TREES
+		COMMITS
+
+	Git é um sistema distribuído seguro, pois pode haver várias pessoas codificando um código, mas com o histórico de alterações de cada pessoa.
+
+	- Chaves SSH e Token
+
+	GitHub: Plataforma de armazenamento de códigos
+
+	Chave SSH: Forma de estabelecer um conexão segura entre duas máquinas
+
+	Token de acesso pessoal
+
+	Quando for fazer um commit, aí colocar a senha de acesso para fazer o commit
+
+	- Primeiros comandos com o GIT
+
+		git init
+
+		git add
+
+		git commit
+
+	- Ciclo de vida
+		Tracked
+		Untracked 
+
+	- Resolvendo conflitos
+		
