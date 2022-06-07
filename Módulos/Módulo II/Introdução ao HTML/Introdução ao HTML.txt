@@ -1,0 +1,49 @@
+	- HTML: HyperText Markup Language
+		Uma linguagem de marcação. Com objetivo de ser um esqueleto de um website. Já que sua base, são as âncoras, que seriam ligações para outras páginas web. Assim permitindo uma conexão mundial web.
+
+	- Elemento HTML
+		O HTML possui seus elementos, que dão as devidas funcionalidades para o funcionamento básico de uma página web.
+		Possui tags, que são os elementos que tem funções, dentre elas, de criação de parágrafos, títulos, subtítulos, imagens, links (âncoras) e muito mais.
+
+		O elemento HTML, possui as tags, atributos e o conteúdo.
+
+		Tags vão criar o elemento em questão. Exemplos já citados. Podendo ter Tags com abertura e fechamentos "</..>", e outras, semente abertura, fechando em si mesma.
+
+		Atributos irão fazer uma configuração básica, irão atribuir algo a essas tags.
+
+		Conteúdo que ficará dentro dessa tag. Sendo os títulos, subtítulos, imagens, links, e etc.
+
+	- Estrutura básica HTML
+		<!DOCTYPE html>
+		<html>
+		     <head>
+		            <meta>
+		            <title></title>
+                                        <head>
+                                        <body>
+                                       </body>
+		</html>
+
+	<!DOCTYPE html>: Diz ao navegador qual linguagem é a escrita. No caso HTML5
+	<html>: A delimitação do código html
+	<head>: Conterá informações básicas e necessárias para o navegador
+	<meta>: Possuirá informações como o tipo de caracteres do texto do conteúdo, a partir do atributo charset
+	<title>: O título da página, que aparecerá na aba, ao lado do favicon, ícone da página
+	<body>: Conteúdo da página em questão. Tendo textos, imagens, vídeos, áudios e etc.
+
+	- Semântica
+		É o significado dos elementos das tags. Cada elemente serve para algo específico. Sendo alguns: section, header, article, aside, footer, h1, h2, h3, h4, h5, h6
+
+	<h1> até <h6>: São títulos e subtítulos
+
+	<p>: É onde haverá um texto, p de parágrafo
+
+	<a>: Uma âncora, que irá se conectar com outras páginas web.
+		href: Atributo onde ficará o link de alguma página web, para assim, a tag <a> poder se conectar a tal página
+		target="_blank": Atributo que configura o meio como o navegador irá abrir a página. Sendo _blank, para abrir a página em uma nova janela.
+
+	<img>: Tag de imagem sem fechamento, para adicionar uma image
+		src: Atributo para configura o local dessa imagem, sendo um link para a web, o imagem local, salva junto com o arquivo HTML
+		alt: atributo que serve para descrever o que tem nas imagens. Assim, ajudando pessoas que possuem algum tipo de limitação visual, já que os aparelhos como computador e celular, pode conter aplicativos que fazem a leitura de tela para essas pessoas. Além de servir para motores de busca como o Google, para identificar o que tem na imagem em questão que está no site
+
+	
