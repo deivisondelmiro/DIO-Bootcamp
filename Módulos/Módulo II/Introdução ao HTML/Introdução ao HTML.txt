@@ -46,4 +46,19 @@
 		src: Atributo para configura o local dessa imagem, sendo um link para a web, o imagem local, salva junto com o arquivo HTML
 		alt: atributo que serve para descrever o que tem nas imagens. Assim, ajudando pessoas que possuem algum tipo de limitação visual, já que os aparelhos como computador e celular, pode conter aplicativos que fazem a leitura de tela para essas pessoas. Além de servir para motores de busca como o Google, para identificar o que tem na imagem em questão que está no site
 
-	
+	- Listas: li, ul, ol
+		<ul>: Unordered List: Criará um lista não ordenada. Ou seja, a ordem não importa. Contendp antes dos itens, um circulo, pontos, ou quadrados
+		<ol>: Ordered List: Criará uma lista ordenada. Ou seja, a ordem vai importar. E possuirá como especificidade dessas ordens, números, algarismos romanos ou letras
+
+		<li>: List Items, é o que ficara dentro das listas. Tanto ul, quanto ol. Sendo um item dessa lista
+
+	- CSS3: Cascading Style Sheets
+		São folhas de estilos, e é uma linguagem de estilos. Assim, estilizar a estrutura HTML
+		Possui seletores, que especificam qual elemento do HTML irá estilizar
+		Declarações vai especificar o que é que vai mudar e colocar de estilização nos elementos do HTML, com as devidas propriedades
+
+		ID: no HTML vai ficar para identificar um único elemento
+		Class: irá identificar um grupo em forma de classe
+
+		No css o ID é representado por um #, já a class, por um .
+
