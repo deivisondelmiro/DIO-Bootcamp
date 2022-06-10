@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .flexbox {
+            display: flex;
+            flex-direction: row;
+            max-width: 500px;
+            border: 1px solid black;
+        }
+
+        .item {
+            height: 50%;
+            min-width: 200px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .nowrap {
+            flex-wrap: nowrap;
+        }
+
+        .wrap {
+            flex-wrap: wrap;
+        }
+
+        .wrap-reverse {
+            flex-wrap: wrap-reverse;
+        }
+
+        .gray {
+            background: gray;
+        }
+
+        .blue {
+            background: blue;
+        }
+
+        .orange {
+            background: orange;
+        }
+
+        .yellow {
+            background: yellow;
+        }
+
+        .green {
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="flexbox nowrap">
+        <div class="item gray">1</div>
+        <div class="item blue">2</div>
+        <div class="item orange">3</div>
+        <div class="item yellow">4</div>
+        <div class="item green">5</div>
+    </div><br>
+
+    <div class="flexbox wrap">
+        <div class="item gray">1</div>
+        <div class="item blue">2</div>
+        <div class="item orange">3</div>
+        <div class="item yellow">4</div>
+        <div class="item green">5</div>
+    </div><br>
+
+    <div class="flexbox wrap-reverse">
+        <div class="item gray">1</div>
+        <div class="item blue">2</div>
+        <div class="item orange">3</div>
+        <div class="item yellow">4</div>
+        <div class="item green">5</div>
+    </div><br>
+</body>
+</html>
