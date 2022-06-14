@@ -35,6 +35,7 @@
 		flex-end: final do container.
 		center: ao centro do container.
 		space-between: cria um espaçamento igual entre os elementos.
+
 		space-around: os espaçamentos do meio são duas vezes maiores que o inicial e final.
 
 	- Align Items: Trata do alinhamento dos flex itens de acord com o eixo do container. Sendo seu alinhamento diferente quando os itens estão em coluna ou linhas. Permite o alinhamento central no eixo vertical.
@@ -42,10 +43,29 @@ Não precisa necessariamente saber a altura do item.
 	Tipos de Alinhamento:
 		center: alinhamento dos itens ao centro.
 		stretch: padrão, e os flex cresçam igualmente
-		flex-start: alinhamento dos iten no início
+		flex-start: alinhamento dos itens no início
 		flex-end: alinhamento dos itens no final
 		baseline: alinhamento de acordo com alinha base da tipografia dos itens
 
 	- Align Content: Propriedade responsável por tratar o alinhamento das linhas do container em relação ao eixo vertical do container.
 	Sendo necessário que o container utiliza quebra de linhas. E a altura do container seja maior que a soma das linhas dos itens.
+		center: alinhamento dos itens ao centro.
+		stretch: padrão, e os flex cresçam igualmente
+		flex-start: alinhamento dos iten no início
+		flex-end: alinhamento dos itens no final
+		baseline: alinhamento de acordo com alinha base da tipografia dos itens
 
+		space-between: cria um espaçamento igual entre os elementos.
+		space-around: os espaçamentos do meio são duas vezes maiores que o inicial e final.
+
+	Fundamentos - Flex Items
+
+	- Flex Grow: Define a proporcionalidade de crescimentos dos itens, respeitando o tamanho de seus conteúdos internos. Não funcionará caso tenha sido adicionado o justify-content ao flex container.
+
+	- Flex Basis: Estabelece o tamanho inicial do item antes das distribuições de espaço restante dentro dele, usando como base o conteúdo interno disposto.
+	Valores possíveis:
+		auto: caso o item não tenho o tamanho, este será proporcional ao conteúdo do item.
+		px, %, em, ...: são valores exatos previmente definidos
+		0 (zero): terá relação com a definição do flex-grow
+
+	- Flex Shrink: Estabelece a capcidade de redução ou compressão do tamanho de um item.
