@@ -69,3 +69,16 @@ Não precisa necessariamente saber a altura do item.
 		0 (zero): terá relação com a definição do flex-grow
 
 	- Flex Shrink: Estabelece a capcidade de redução ou compressão do tamanho de um item.
+
+	- Flex: Shorthand para as propriedades: grow, shrink e basis.
+
+	- Order: Lidará com a ordenação dos intens.
+
+	- Align Self: Estabelece o alinhamento de modo individual sobre um determinado item.
+	Valores possíveis:
+		Auto: valor padrão, irá respeitar a definição de align-items do container
+		Flex-start: ao início do container
+		Flex-end: ao final do container
+		Center: relativo ao centro de acordo com o eixo
+		Streth: ocupa todo os espaço relativo
+		Baseline: utiliza a linha base da tipografia
