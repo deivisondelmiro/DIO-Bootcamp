@@ -10,39 +10,39 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(243, 243, 243);
+    background-color: rgba(116, 0, 255, 0.93);
+    display: flex;
     margin: 0;
     padding: 0;
-    display: flex;
     justify-content: center;
 }
 
-.instagram-wrapper {
+.wrapper {
     display: flex;
     align-items: center;
-    justify-content: start;
-    width: 60%;
+    justify-content: center;
+    width: 90%;
     height: 100vh;
 }
 
-.instagram-phone {
+.img-login {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
 }
 
-.instagram-phone img {
-    height: 50rem;
+.img-login img {
+    height: 28rem;
 }
 
-.instagram-continuar {
+.continuar-login {
     display: flex;
-    align-items: center; /* horizontal */
-    justify-content: space-around; /* vertical */
+    align-items: center;
+    justify-content: space-around;
     flex-direction: column;
-    width: 50%;
-    min-height: 34rem;
+    width: 40%;
+    min-height: 40rem;
 }
 
 .group {
@@ -50,18 +50,19 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    background-color: #ffffff;
-    width: 100%;
+    background-color: rgb(223, 225, 213, 96);
+    width: 80%;
     padding: 1.3rem 0;
-    border: 1px solid lightgray;
+    border-radius: 5px;
 }
 
 .group:nth-child(1) {
-    min-height: 19rem;
+    min-height: 15rem;
 }
 
-.instagram-logo {
-    height: 3rem;
+h1 {
+    font-size: 20px;
+    padding: 25px;
 }
 
 .profile-photo {
@@ -76,24 +77,29 @@ body {
     height: 6rem;
 }
 
-.instagram-login {
-    background-color: #0095F6;
+.social-login {
+    background-color: rgb(74, 0, 168, 1);
     color: #ffffff;
     padding: 8px;
     border-radius: 4px;
+    margin-top: 15px;
 }
 
-.instagram-logout {
-    color: #0095F6;
+.social-logout {
+    color:rgba(112, 0, 255, 1);
     margin-top: 1rem;
 }
 
 .not-account {
-    color: rgb(160, 160, 160);
+    color: rgb(55, 2, 114);
 }
 
-.link-blue {
-    color: #0095F6;
+.not-account a {
+    color: rgba(112, 0, 255, 1);
+}
+
+.logout-change {
+    color: rgb(55, 2, 114);
 }
 
 .get-the-app {
@@ -103,55 +109,96 @@ body {
     justify-content: center;
     width: 100%;
     padding: 1.3rem 0;
+    color: rgb(228, 215, 215);
 }
 
 .download {
     display: flex;
-    width: 100%;
+    width: 128%;
     justify-content: space-evenly;
     align-items: center;
     padding: 1rem;
 }
 
 .app-download {
-    height: 3rem;
-    width: 10rem;
+    height: 5rem;
+    width: 15rem;
     background-size: cover;
 }
 
 .app-download:nth-child(1) {
-    background-image: url('./assets/apple-button.png');
+    background-image: url('./assets/google-play-badge.png');
+    width: 228px;
+    height: 94px;
 }
 
 .app-download:nth-child(2) {
-    background-image: url('./assets/googleplay-button.png');
+    background-image: url('https://www.sm-castelobranco.pt/media/236334/appstore.png');
+    width: 211px;
+    height: 61px;
 }
 
 /* media queries */
 
 @media (max-width: 1024px) {
-    .instagram-wrapper {
-        width: 90%;
+    .wrapper {
+        width: 115%;
+    }
+
+    .img-login img {
+        width: 60vw;
+        height: 50vh;
+    }
+
+    .continuar-login {
+        min-height: 42rem;
+    }
+
+    .social-login {
+        margin: 5px -5px;
+    }
+
+    .download {
+        flex-wrap: wrap;
+        padding-bottom: 5px;
+    }
+
+    .app-download:nth-child(1) {
+        max-width: 194px;
+        max-height: 67px;
+    }
+
+    .app-download:nth-child(2) {
+        max-width: 174px;
+        max-height: 50px;
     }
 }
 
 @media (max-width: 650px) {
-    body {
-        background-color: #ffffff;
-    }
-    .instagram-wrapper {
-        width: 90%;
+    .wrapper {
+        width: 115%;
     }
 
-    .instagram-phone {
-        display: none;;
+    .img-login {
+        display: none;
     }
 
-    .instagram-continuar {
+    .continuar {
         width: 100%;
     }
 
-    .group {
-        border: 1px solid transparent;
+    .continuar-login {
+        min-height: 37rem;
+        width: 75vw;
+    }
+
+    .download {
+        flex-wrap: nowrap;
+        padding: 20px;
+    }
+
+    .app-download:nth-child(1) {
+        max-height: 77px;
+        max-width: 196px;
     }
 }
