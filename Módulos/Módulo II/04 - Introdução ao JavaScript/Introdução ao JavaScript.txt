@@ -1,0 +1,13 @@
+	Introdução ao JavaScript
+
+	- O que é JavaScript?
+	
+	Características:
+		Interpretada: Não passar por um compilação
+		Baseada em Protótipos
+		Multiparadigma
+		Comumente utilizada em aplicações web client-side
+		Segue o padrão ECMAScript
+
+	- DOM (Document Object Model): mostra tudo que tem disponível naquele documento
+	Estrutura dos elementos dentro da janela
