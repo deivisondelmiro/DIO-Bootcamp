@@ -11,3 +11,5 @@
 
 	- DOM (Document Object Model): mostra tudo que tem disponível naquele documento
 	Estrutura dos elementos dentro da janela
+
+	- Frameworks e Bibliotecas: são maneiras para otimizar o trabalho, o código em si.

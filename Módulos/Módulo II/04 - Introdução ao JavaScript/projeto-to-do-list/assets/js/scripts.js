@@ -1,9 +1,8 @@
-tarefas = document.getElementById('button');
-tarefa_adicionada = document.getElementById('to_do');
-checkbox = document.getElementById('checkbox');
+var tarefas = document.querySelector("#button");
+var tarefaAdicionada = document.querySelector("#toDo");
+var checkbox = document.querySelector("#checkbox");
 
-var inputTarefa = document.getElementById('to_do').value;
-
-tarefas.addEventListener('click', function() {
-    document.getElementById('checkbox').innerText = inputTarefa;
-});
+function toDoButton() {
+    var tarefaAdd = "<div>" + tarefaAdicionada.value + "<br>" + "</div>"
+    checkbox.innerHTML = tarefaAdd
+};
