@@ -48,3 +48,8 @@
 	- Arrays (vetores): São listas interável de elementos
 
 	- Objetos: Estrutura do tipo "chave e valor". Uma declaração, que possui dentro das chaves "{}", alguns dados
+
+	- Empty, undefined, null
+		Empty: declarou a variável de forma vazia, não tem nenhum valor dentro
+		Undefined: valor indefinido. Não existe
+		Null: O valor não existe de propósito
