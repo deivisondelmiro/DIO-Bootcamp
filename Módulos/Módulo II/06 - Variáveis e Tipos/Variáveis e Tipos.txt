@@ -1,0 +1,50 @@
+	- Atribuindo valores
+
+	Tipos de escritas/digitações (boas práticas)
+
+	- Case Type		- Example
+	Original Variable as String	some awesome var
+	Camel Case		someAwesomeVar
+	Snake Case		some_awesome_var
+	Kebab Case		some-awesome-var
+	Pescal Case		SomeAwesomeVar
+	Upper Case Snake Case	SOME_AWESOME_VAR
+
+	Variáveis: valores que podem ser modificados
+
+	var: declaração de variável. Com escopo global, podendo ser redeclarada
+	let: uma declaração que só funcional no escopo de bloco. Ou seja, ao ir para o escopo global, a declaração não funcionará. Podendo ser redeclarada
+
+	Usa-se o camelCase
+
+	Hoisting: Atribuir valores para uma variável antes de declarar ela
+
+	Recomenda-se declarações let, por conta de segurança, em escopos de blocos. 
+
+	- Constantes: São declarações que são constantes. Não mudam de valores. São declaradas em SNAKE_UPPER-CASE. Sendo de escopo de bloco. E não faz hoisting.
+	Não pode redeclarar, nem reatribuir.
+
+	- Estruturas de dados: tipagem dinâmica no javascript (não há a necessidade de falar o tipo daquela variável, e conforme vai rodando o código, é possivél mudar o tipo da declaração).
+
+	Para checar o tipo da declaração, é só colocar "typeof" e o nome da declaração ao lado
+
+	- Tipos primitivos (não tem métodos dentro deles): numbers, strings, boolean, null, undefined
+		São escritos de forma minúsculas
+
+	- Tipos compostos/não primitivos (há métodos dentro deles): objects, arrays
+
+	- Strings: textos, frases... trabalha com caracteres
+		Médtodos importantes:
+			Concatenação
+			Propriedade lenght
+			Iterabilidade
+			Formatação
+			Index de letras
+
+	- Numbers: Inteiros ou decimais
+
+	- Booleans: Verdadeiro ou Falso (True or False)
+
+	- Arrays (vetores): São listas interável de elementos
+
+	- Objetos: Estrutura do tipo "chave e valor". Uma declaração, que possui dentro das chaves "{}", alguns dados
