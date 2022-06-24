@@ -1,0 +1,28 @@
+    - Coleções
+
+    - Map: uma coleção de arrays no formato [chave, vaor];
+        Pode iterado por um loop for... of
+
+    - Métodos: coleções chaveadas
+        Adicionar: myMap.set('apple', 'fruit');
+        Ler: myMap.get(apple);
+        Deletar: myMap:delete("apple");
+
+    - Map vs Objeto
+        - Maps podem ter chaves de qualquer tipo;
+        - Maps possuem a propriedade length;
+        - Maps são mais fáceis de iterar;
+        - Utilizado quando o valor das chaves é desconhecido;
+        - Os valores têm o mesmo tipo;
+
+    - Set: são estruturas que armazenam apenas valores únicos.
+
+    - Métodos:
+        Adicionar: mySet.add(1);
+        Consultar: mySet.has(1);
+        Deletar: mySet.delete(5);
+
+    - Set vs Array
+        - Possui valores únicos;
+        - Em vez da propriedade length, consulta-se o número de registros pela propriedade size;
+        - Não possui os métodos map, filter, reduce, etc.
