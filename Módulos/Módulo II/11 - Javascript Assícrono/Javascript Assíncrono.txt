@@ -1,0 +1,34 @@
+    - Assicronicidade
+
+    - Assícrono: "Que não ocorre ou não se efetiva ao mesmo tempo."
+
+    - Javascript roda de maneira síncrona por padrão. Cada coisa de cada vez. Enquanto que no assícrono, seria mais de uma tarefa sendo realizada ao mesmo tempo.
+
+    - Promises: Objeto de processamento assíncrono. Em que inicialmente, seu valor é desconhecido. Ela pode, então, ser resolvida ou rejeitada.
+        - 3 estados de uma promise:
+            - Pending
+            - Fulfilled
+            - Rejected
+
+    - Estrutura
+        Const myPromise = new Promise((resolve, reject) = > {
+            window.setTimeout(() = > {
+                resolve(console.log('Resolvida!'));
+            }, 2000);
+        });
+
+    - Async: Palavra chave que define uma função como assíncrona, além da await.
+
+    - Await: Uma maneira de fazer com que o código pare de rodar, e só continue depois da promise ser resolvida. E daí, fazer a manipulação necessária, com then ou catch.
+
+    - Pode usar também o try...catch nas promises.
+
+    - APIs (Application Programming Interface): Uma API é uma forma de intermediar os resultados do back-end com o que é apresentado no front-end.
+    Você consegue acessá-la por meio de URLs.
+
+    - JSON (JavaScript Object Notation): É muito comum que APIs retornem seus dados no formato .json, portanto precisamos tratar esses dados quando os recebermos.
+
+    - Fetch: Retorna uma promise a partir de uma API.
+        - Sintaxe: fetch(url, options)
+                    .then(response => response.json())
+                    .then(json => console.log(json))
