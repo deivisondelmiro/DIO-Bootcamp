@@ -1,0 +1,25 @@
+    - Tratamento de erros
+
+    - Tipos de erros
+        ECMAScript Error: Erros que ocorrem em tempo de execução.
+            Composto por: mensagem, nome, linha, call satck
+
+        DOMException: Erros relacionados ao Document Object Model (DOM).
+
+    - Tratamento de erros em si
+        - Throw: Irá retornar o resultado como um erro, e propriedades de um erro. Diferente do return, que se especificar uma string, será retornada uma string.
+
+        - Try...catch: Se dentro do bloco try houver algum erro, será capturado pelo bloco catch, e assim poderá ser tratado e manipulado como for especificado por alguma instrução.
+
+        - Finally: Um bloco de códigos, que depois das verificações de erros, irá ser executado, havendo ou não algum erro.
+
+    - Objeto Error
+        É um meio pelo qual você pode criar um erro, com parâmetros como message, fileName, lineNumber.
+
+        Sintaxe:
+            new Error(message, fileName, lineNumber)
+            // parâmetros sendo opicionais
+
+            const MeuErro = new Error ('Mensagem Inválida');
+
+            throw MeuErro;
