@@ -1,0 +1,37 @@
+    - Orientação a objetos
+
+    - Paradigmas
+        - Imperativo: que foca em como irá resolver o problema.
+        - Declarativo: no que irá fazer.
+
+        - Sendo a orientação a objetos fazendo parte do paradigma imperativo.
+            - Precisa falar como vai ser.
+
+        - Os programas são "objetos" que possuem uma série de propriedades.
+            - Pilares:
+                - Abstração: "Processo mental que cpnciste em isolar um aspecto determinado de um estado de coisas relativamente complexo, a fim de simplificar a sua avaliação, classificação ou para permitir a comunicação do mesmo." Tornar algo mais simplificado, generalista.
+
+                - Herança: O objeto filho herda propriedades e métodos do objeto pai.
+
+                - Encapsulamento: Cada classe tem propriedades e métodos independentes do restante do código.
+
+                - Polimorfismo: Objetos podem herdar a mesma classe pai, mas se comportam de forma diferente quando invocamos seus métodos.
+
+    - Protótipos: Todos os objetos Javascript herdam propriedades e métodos de um proototype. O objeto Object.prototype está no topo desta cadeia.
+
+    - Classes: Syntatic sugar: uma sintaxe feita para facilitar a escrita.
+        class Meal {
+            constructor (food) {
+                this.food = food
+            }
+
+            eat() {
+                return ''
+            }
+        }
+
+        - Javascript não possui classes nativamente. Todas as classes são objetos e a herança se dá por protótipos.
+            - Constructor
+            - Getter e Setter
+            - Super()
+            - Método
