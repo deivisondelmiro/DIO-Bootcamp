@@ -20,3 +20,25 @@
             - Remove um elemento (document.removeChild(element));
             - Adiciona um elemento (document.appendChild(element));
             - Substitui um elemento (documento.replaceChild(new, old));
+
+        - Trabalhando com estilos
+            - Classes:
+                - Element.classList
+                    classList.add(""); (Adiciona classe ao elemento)
+                    classList.remove(""); (Remove a classe do elemento)
+                    classList.toggle(""); (Adicionar classe. Mas caso já faça parte de alguma, remove dessa lista)
+
+            - CSS
+                - Acessando diretamente o CSS de um elemento
+                    document.getElementByTagName("p").style.color = "blue";
+
+            - Tipos e Acionando Eventos
+                - Eventos do mouse (mouseover (quando está com o mouse sobre o elemento), mouseout (quando tira o mouse do elemento))
+                - Eventos de clique (click (quando clica no elemento), dbclick (quando clica duas vezes no elemento))
+                - Eventos de atualização (Change, load)
+
+            - Event Listener: Diretamente no Javascript, cria um evento qye vai ser acionado no momento em que o usuário realizar determinada ação.
+                - elemento.addEventListener("", ...);
+
+            - Atribuindo HTML
+                - onclick="()" em um atributo HTML. especifica a função a ser chamada diretamente no elemento HTML, quando houver uma ação de clique no elemento.
