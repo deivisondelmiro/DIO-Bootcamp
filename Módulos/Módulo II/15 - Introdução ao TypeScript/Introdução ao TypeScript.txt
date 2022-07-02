@@ -1,0 +1,13 @@
+    - TypeScript: seria uma "extensão" que facilita o desenvolvimento de código de javascript. Com funcionalidades que nem tem no javascript em si.
+
+    - É um Superset do javascript
+        Linguagem contruída por cima do JS;
+        Adiciona features à linguagem original;
+        Compilada para JS.
+    
+    - Adiciona definição estática de tipos:
+        Funcionalidade do código mais explícitas;
+        Maior segurança durante o desenvolvimeto;
+        Detecta erros durante a compilação que só seriam percebidos em execução;
+    - Compila um JavaScript mais resiliente;
+    - Ajuda a desenvolver boas práticxas de programação.
