@@ -1,15 +1,13 @@
-let button = document.getElementById("button");
-let input1 = document.getElementById("input1") as HTMLInputElement;
-let input2 = document.getElementById("input2") as HTMLInputElement;
+type input = number | string
 
-function adicionarNumero(numero1: number, numero2: number) {
-    return numero1 + numero2
+function somarValores(input1: input, input2: input) {
+    if (typeof input1 === 'string' || typeof input2 === 'string') {
+        return input1.toString() + input2.toString();
+    } else {
+        return input1 + input2;
+    }
 }
 
-if (button) {
-    button.addEventListener('click', () => {
-        if (input1 && input2) {
-            console.log(adicionarNumero(Number(input1.value), Number(input2.value)))
-        }
-    })
-}
+console.log(somarValores(1, 5));
+console.log(somarValores('olá', ', tudo bem?'));
+console.log(somarValores('que dia é hoje? ', 5));
