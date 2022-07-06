@@ -1,6 +1,8 @@
+"use strict";
 // types
 // interfaces
-
+exports.__esModule = true;
+exports.numero = void 0;
 /*
 interface IAnimal {
     nome: string;
@@ -25,7 +27,6 @@ const animal: IDomestico = {
     tipo: 'terrestre',
 }
 */
-
 /*
 const input = document.getElementById('input') as HTMLInputElement;
 
@@ -34,15 +35,12 @@ input.addEventListener('input', (event) => {
     console.log(i.value);
 })
 */
-
 // Generic types
-
 /* function adicionaApendiceALista<NaoSei>(array: NaoSei[], valor: NaoSei) {
     return array.map(() => valor);
 }
 
 adicionaApendiceALista([1, 2, 3], 'd'); */
-
 /* interface IUsuario {
     id: string,
     email: string;
@@ -60,7 +58,6 @@ function redirecione(usuario: IUsuario | IAdmin) {
     // redirecionar para a área de usuário
 }
 */
-
 /*
 interface IUsuario {
     id: string,
@@ -76,7 +73,6 @@ function redirecione(usuario: IUsuario) {
     // redirecionar para a área de usuário
 }
 */
-
 /*
 interface Cachorro {
     nome: string;
@@ -104,7 +100,6 @@ cao.idade = 8;
 
 console.log(cao);
 */
-
 /*
 import $ from 'jquery';
 
@@ -116,19 +111,4 @@ $.fn.extend({
 
 $('body').novaFuncao();
 */
-
-/* export const numero = 2; */
-
-interface Pessoa {
-    nome: string;
-    idade: number;
-    nacionalidade: string;
-}
-
-interface Brasileiro extends Omit<Pessoa, 'nacionalidade'> {
-
-}
-
-const brasileiro: Brasileiro = {
-
-}
+exports.numero = 2;
