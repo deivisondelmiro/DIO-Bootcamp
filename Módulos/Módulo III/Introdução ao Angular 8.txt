@@ -1,0 +1,3 @@
+    -- Angular CLI: serve para gerenciar projetos do angular.
+
+    
