@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma de Números</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font: normal 12pt Arial, sans-serif;
+            background: rgba(236, 213, 169, 0.616);
+        }
+
+        div#area_principal {
+            padding-top: 200px;
+            margin: auto;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        h1 {
+            color: rgba(241, 96, 0, 0.932);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.109);
+        }
+
+        #input_1, #input_2 {
+            width: 100px;
+            height: 35px;
+            border-radius: 5px;
+            border-style: none;
+            border: 0.1px solid black;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        #botao_somar {
+            display: block;
+            margin: auto;
+            width: 80px;
+            height: 35px;
+            font-size: 16px;
+            padding: 2px;
+            background: rgb(101, 98, 98);
+            color: white;
+            border-radius: 5px;
+            border-style: none;
+        }
+
+        #resultado_soma {
+            color: black;
+            text-shadow: 1px 1px 8px rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <div id="area_principal">
+        <h1>Somando Valores</h1>
+        <input type="number" name="input_1" id="input_1"> +
+        <input type="number" name="input_2" id="input_2">
+        <input type="button" value="Somar" id="botao_somar" onclick="somar()">
+        <div id="resultado_soma">Resultado</div>
+    </div>
+
+    <script>
+        function somar() {
+            var input_1 = window.document.querySelector('input#input_1')
+            var input_2 = window.document.querySelector('input#input_2')
+            var resultado = window.document.getElementById('resultado_soma')
+            var numero_1 = Number(input_1.value)
+            var numero_2 = Number(input_2.value)
+            var soma = numero_1 + numero_2
+            resultado_soma.innerHTML = `Resultado: a soma entre ${numero_1} e ${numero_2} é igual a <strong>${soma}</strong>.`
+        }
+    </script>
+</body>
+</html>

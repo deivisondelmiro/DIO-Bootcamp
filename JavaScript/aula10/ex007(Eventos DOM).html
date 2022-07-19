@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(224, 204, 168);
+        }
+
+        div#mouseEnterOut, div#mouseDownUp, div#mouseClick, div#mouseMover {
+            background-color: rgba(128, 128, 128, 0.541);
+            font: bold 16px 'Arial', sans-serif;
+            text-shadow: 1px 1px 2px black;
+            color: white;
+            text-align: center;
+            line-height: 600%;
+            border-radius: 5px;
+            border-style: none;
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            margin-top: 5px;
+            transition-duration: .5s;
+        }
+
+        div#mouseDownUp, div#mouseClick, div#mouseMover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="divPrincipal">
+        <div id="mouseEnterOut">
+            <p>mouse</p>
+        </div>
+        <div id="mouseDownUp">
+            <p>mouse</p>
+        </div>
+        <div id="mouseClick">
+            <p>click</p>
+        </div>
+        <div id="mouseMover">
+            <p>mouse</p>
+        </div>
+    </div>
+
+    <script>
+        var mouseEnterOut = document.getElementById('mouseEnterOut')
+        mouseEnterOut.addEventListener('mouseenter', functionMouseEnter)
+        mouseEnterOut.addEventListener('mouseout', functionMouseOut)
+        /*mouseEnterOut.addEventListener('mousemover', functionMouseMover)*/
+
+        var mouseDownUp = document.querySelector('div#mouseDownUp')
+        mouseDownUp.addEventListener('mousedown', functionMouseDown)
+        mouseDownUp.addEventListener('mouseup', functionMouseUp)
+
+        var mouseClick = document.getElementById('mouseClick')
+        mouseClick.addEventListener('click', functionMouseClick)
+
+        var mouseMover = document.getElementById('mouseMover')
+        mouseMover.addEventListener('mouseover', functionMouseMover)
+
+
+        function functionMouseEnter() {
+            mouseEnterOut.innerText = 'mouseout'
+            mouseEnterOut.style.background = 'gray'
+        }
+
+        function functionMouseOut() {
+            mouseEnterOut.innerText = 'mouseenter'
+            mouseEnterOut.style.background = 'rgba(128, 128, 128, 0.541)'
+        }
+
+        /*function functionMouseMover() {
+            mouseEnterOut.innerText = 'mousemover'
+            mouseEnterOut.style.background = 'black'
+        }*/
+
+        function functionMouseDown() {
+            mouseDownUp.innerText = 'mouseup'
+            mouseDownUp.style.background = 'gray'
+        }
+
+        function functionMouseUp() {
+            mouseDownUp.innerText = 'mousedown'
+            mouseDownUp.style.background = 'rgba(128, 128, 128, 0.541)'
+        }
+
+        function functionMouseClick() {
+            mouseClick.innerText = 'click'
+            mouseClick.style.background = 'gray'
+        }
+
+        function functionMouseMover() {
+            mouseMover.innerText = 'mousemover'
+            mouseMover.style.background = 'gray'
+        }
+    </script>
+</body>
+</html>

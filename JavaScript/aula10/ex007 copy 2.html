@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo_da_pagina">Título da página</h1>
+    <p id="paragrafo_1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quod consequuntur magni modi est eligendi eveniet, itaque maxime consequatur voluptate reiciendis qui magnam quibusdam illo dolores cum minus aliquid a?</p>
+    <p id="paragrafo_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione rem, perferendis, sunt molestiae dolorum magni distinctio suscipit maxime iure quas reprehenderit velit dicta sed tempora, est expedita? Ratione, placeat odio!</p>
+
+    <script>
+        var paragrafo_1 = document.querySelector('p#paragrafo_1')
+        var paragrafo_2 = document.querySelector('p#paragrafo_2')
+
+        addEventListener('click', clicou)
+        addEventListener('mouseout', saiu_paragrafo_1)
+        addEventListener('click', entrou_paragrafo_2)
+        addEventListener('mouseout', saiu_paragrafo_2)
+
+        function clicou() {
+
+            paragrafo_1.innerHTML = `Clique novamente!`
+        }
+
+        function saiu_paragrafo_1() {
+            var paragrafo_1 = document.querySelector('p#paragrafo_1')
+
+            paragrafo_1.innerHTML = `<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quod consequuntur magni modi est eligendi eveniet, itaque maxime consequatur voluptate reiciendis qui magnam quibusdam illo dolores cum minus aliquid a?</p>`
+        }
+
+        function entrou_paragrafo_2() {
+
+            paragrafo_2.innerHTML = `...`
+        }
+
+        function saiu_paragrafo_2() {
+
+            paragrafo_2.innerHTML = `JavaScript`
+        }
+    </script>
+</body>
+</html>

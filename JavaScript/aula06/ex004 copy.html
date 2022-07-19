@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 450px;
+            background-color: rgba(129, 129, 227, 0.843);
+            color: rgb(0, 0, 0);
+            font: normal 20px sans-serif;
+            margin: auto;
+            text-align: justify;
+        }
+
+        h1 {
+            font: normal 25px sans-serif;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            margin-bottom: 15px
+        }
+
+        p, h1 {
+            background-color:rgb(218, 218, 255);
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        p {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nomeDeUsuario1 = window.prompt('Qual é o seu nome?')
+        var codigoDoProduto1 = Number.parseFloat(window.prompt('Digite o código do produto:'))
+        var valorProduto1 = Number.parseFloat(window.prompt('Qual o valor R$ do produto?'))
+        var codigoDoProduto2 = Number.parseFloat(window.prompt('Digite o código do outro produto:'))
+        var valorProduto2 = Number.parseFloat(window.prompt('Qual o valor R$ do produto?'))
+        var valorTotal = valorProduto1 + valorProduto2
+
+        document.write(`<h1>Olá, <strong>${nomeDeUsuario1}</strong>!</br></h1>`)
+        document.write(`<p>O código do produto: ${codigoDoProduto1} e, o valor é de R$${valorProduto1.toFixed(2)}</p></br>`)
+        document.write(`<p>O código do produto: ${codigoDoProduto2} e, o valor é de R$${valorProduto2.toFixed(2)}</p></br>`)
+        document.write(`<p>O total dos valores dos produtos de códigos ${codigoDoProduto1} de R$${valorProduto1.toFixed(2)} e ${codigoDoProduto2} de R$${valorProduto2.toFixed(2)}, é de R$${(valorTotal.toFixed(2)).replace('.', ',')}</p>`)
+    </script>
+</body>
+</html>

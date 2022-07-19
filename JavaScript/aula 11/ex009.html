@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localidade</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(180, 204, 212);
+            font: normal 16px 'Arial', sans-serif;
+        }
+
+        div#divPrincipal {
+            padding-top: 250px;
+            margin: auto;
+            width: 150px;
+            text-align: center;
+        }
+
+        h1 {
+            padding-bottom: 8px;
+            color: rgb(49, 49, 49);
+        }
+
+        p {
+            padding-bottom: 5px;
+        }
+
+        input#localidades {
+            width: 150px;
+            height: 25px;
+            border-radius: 3px;
+            border-style: none;
+            border: 1px solid black;
+            margin-bottom: 8px;
+            background-color: rgba(230, 230, 230, 0.687);
+            text-align: center;
+        }
+
+        input#button {
+            padding: 5px;
+            border-radius: 3px;
+            border-style: none;
+            background-color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+
+        div#mensagem {
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="divPrincipal">
+        <h1>Localidade</h1>
+        <p>Você está vivendo em que país?</p>
+        <input type="text" name="local" id="localidades" placeholder="Digite seu País">
+        <input type="button" value="Confirmar" id="button" onclick="localidade()">
+        <div id="mensagem"></div>
+    </div>
+
+    <script>
+        function localidade() {
+            var localidade = document.getElementById('localidades')
+            var mensagem = document.getElementById('mensagem')
+            mensagem.innerHTML = `Você está vivendo em ${localidade.value}!`
+            if (localidade.value == 'Brasil' || localidade.value == 'brasil') {
+                mensagem.innerHTML += `<p>Você é Brasileiro!</p>`
+            } else {
+                mensagem.innerHTML += `<p>Você é Estrangeiro!</p>`
+            }
+        }
+    </script>
+</body>
+</html>

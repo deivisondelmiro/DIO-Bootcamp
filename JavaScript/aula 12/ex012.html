@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora</title>
+
+    <style>
+        body {
+            background-color: bisque;
+            text-align: center;
+            margin: auto;
+            padding-top: 200px;
+            font: normal 16px 'Arial', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="hora"></h1>
+    <p id="mensagemHoras"></p>
+    <p id="diaTardeNoite"></p>
+
+    <script>
+        var horaAgora = new Date()
+        var hora = horaAgora.getHours()
+
+        var horaH1 = document.getElementById('hora')
+        var mensagemHoras = document.getElementById('mensagemHoras')
+        var diaTardeNoite = document.getElementById('diaTardeNoite')
+
+        horaH1.innerHTML += (`${hora} Horas`)
+        mensagemHoras.innerHTML += (`Agora são extamente ${hora} horas.`)
+        if (hora < 12) {
+            diaTardeNoite.innerHTML += `<strong>Bom Dia!</strong>`
+        } else if (hora <= 18) {
+            diaTardeNoite.innerHTML += (`<strong>Boa Tarde!</strong>`)
+        } else {
+            diaTardeNoite.innerHTML += (`<strong>Boa Noite!</strong>`)
+        }
+    </script>
+</body>
+</html>

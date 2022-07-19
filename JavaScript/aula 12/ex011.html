@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade de Votação</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgba(127, 255, 212, 0.407);
+            font: normal 16px Arial;
+            text-align: center;
+        }
+
+        div#principal {
+            margin: auto;
+            margin-top: 200px;
+            width: 300px;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            padding-bottom: 5px;
+        }
+
+        p#primeiroParagrafo, input#idade {
+            margin-bottom: 8px;
+        }
+
+        input#idade {
+            height: 25px;
+            width: 100px;
+            text-align: center;
+        }
+        input#botaoConfirmar {
+            display: block;
+            margin: auto;
+            padding: 5px;
+        }
+
+        input#botaoConfirmar {
+            background-color: rgba(0, 0, 0, 0.551);
+            color: white;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="principal">
+        <h1>Verificação de idade para votação</h1>
+        <p id="primeiroParagrafo">Digite sua idade:</p>
+        <input type="number" name="idade" id="idade">
+        <input type="button" value="Confirmar" id="botaoConfirmar" onclick="idadeVotacao()">
+        <div id="resposta"></div>
+    </div>
+
+    <script>
+        function idadeVotacao() {
+            var idade = document.getElementById('idade')
+            var resposta = document.getElementById('resposta')
+
+            resposta.innerHTML = `<p>Você tem <strong>${idade.value}</strong> anos.</p>`
+
+            if (idade.value < 16) {
+                resposta.innerHTML += `<p>Não vota!</p>`
+            } else if (idade.value < 18 || idade.value > 65) {
+                resposta.innerHTML += `<p>Voto opicional!</p>`
+            } else {
+                resposta.innerHTML += `<p>Voto obrigatório!</p>`
+            }
+        }
+    </script>
+</body>
+</html>

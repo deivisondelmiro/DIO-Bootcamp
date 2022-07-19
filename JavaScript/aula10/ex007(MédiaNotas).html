@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média de Notas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font: normal 12pt Arial, sans-serif;
+            background: rgba(236, 213, 169, 0.616);
+        }
+
+        div#area_principal {
+            padding-top: 200px;
+            margin: auto;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        h1 {
+            color: rgba(241, 96, 0, 0.932);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.109);
+        }
+
+        #primeiraNota, #segundaNota {
+            width: 80px;
+            height: 35px;
+            border-radius: 5px;
+            border-style: none;
+            border: 0.1px solid black;
+            text-align: center;
+            font-size: 16px;
+            justify-self: left;
+        }
+
+        #botaoMedia {
+            display: block;
+            margin: auto;
+            width: 100px;
+            height: 100%;
+            font-size: 16px;
+            padding: 5px;
+            background: rgb(101, 98, 98);
+            color: white;
+            border-radius: 5px;
+            border-style: none;
+            cursor: pointer;
+        }
+
+        #resultadoMedia {
+            display: block;
+            margin: auto;
+            text-shadow: 1px 1px 8px rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="area_principal">
+        <h1>Média das notas</h1>
+        <p>Digite a primeira nota e segunda nota</p>
+        <input type="text" name="primeiraNota" id="primeiraNota" placeholder="1° Nota"> +
+        <input type="text" name="segundaNota" id="segundaNota" placeholder="2° Nota">
+        <input type="button" value="Clique Aqui" id="botaoMedia" onclick="media()">
+        <div id="resultadoMedia">Média Final:</div>
+    </div>
+
+
+    <script>
+        function media() {
+            var primeira_Nota = window.document.getElementById('primeiraNota')
+            var segunda_Nota = window.document.querySelector('input#segundaNota')
+            var resultado_Media = window.document.getElementById('resultadoMedia')
+            var nota1 = Number.parseFloat(primeira_Nota.value)
+            var nota2 = Number.parseFloat(segunda_Nota.value)
+            var mediaFinal = (nota1 + nota2) / 2
+            var resultado = (mediaFinal.toFixed(2)).replace('.', ',')
+            resultadoMedia.innerHTML = mediaFinal >= 7 ? 
+            `Média de ${resultado}: <strong>APROVADO</strong>`: `Média de ${resultado}: <strong>REPROVADO</strong>`
+        }
+    </script>
+</body>
+</html>

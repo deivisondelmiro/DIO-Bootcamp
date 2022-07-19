@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: honeydew;
+            text-align: center;
+            padding-top: 250px;
+            font: normal 16px 'Arial', sans-serif;
+        }
+
+        div#principal {
+            width: 300px;
+            margin: auto;
+        }
+
+        p#diaDaSemana {
+            text-align: left;
+
+        }
+
+        h1#hojeDia {
+            text-align: left;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="principal">
+        <p id="diaDaSemana">Dia da semana</p>
+        <h1 id="hojeDia"></h1>
+    </div>
+
+    <script>
+        var diaDaSemana = new Date()
+        var hojeDia = diaDaSemana.getDay()
+        var hojeDiaH1 = document.getElementById('hojeDia')
+
+        switch(hojeDia) {
+            case 0:
+                hojeDiaH1.innerHTML += `Domingo`
+                break
+            case 1:
+                hojeDiaH1.innerHTML += `Segunda-Feira`
+                break
+            case 2:
+                hojeDiaH1.innerHTML += `Terça-Feira`
+                break
+            case 3:
+                hojeDiaH1.innerHTML += `Quarta-Feira`
+                break
+            case 4:
+                hojeDiaH1.innerHTML += `Quinta-feira`
+                break
+            case 5:
+                hojeDiaH1.innerHTML += `Sexta-Feira`
+                break
+            case 6:
+                hojeDiaH1.innerHTML += `Sábado`
+                break
+            default:
+                hojeDiaH1.innerHTML += `[ERRO] Dia inválido!`
+                break
+
+        }
+    </script>
+</body>
+</html>
